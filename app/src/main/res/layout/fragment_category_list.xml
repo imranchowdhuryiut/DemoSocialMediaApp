@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn=".DashBoardFragment"
+    android:background="@drawable/vd_abstract_envelope">
+
+    <include
+        android:id="@+id/layoutCustomToolbar"
+        layout="@layout/layout_toolbar"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/layoutCustomToolbar"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/height_4dp"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srlCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="@dimen/height_4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCategoryList"
+                    android:layout_marginTop="@dimen/height_4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

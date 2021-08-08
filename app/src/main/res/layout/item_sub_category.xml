@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/height_4dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvSubCategoryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advice"
+        android:textSize="16sp"
+        android:textColor="#2E5698"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/height_4dp"
+        android:layout_marginBottom="@dimen/height_4dp"
+        android:layout_marginRight="@dimen/height_4dp"
+        android:layout_marginLeft="@dimen/height_4dp"/>
+
+    <ImageView
+        android:id="@+id/imgSelect"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_baseline_add_circle_outline_24"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

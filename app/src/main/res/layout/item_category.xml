@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/height_8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/containerViewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:padding="@dimen/height_4dp"
+            android:scaleType="fitXY"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
+
+        <TextView
+            android:id="@+id/tvCategoryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advice"
+            android:textSize="16sp"
+            android:textColor="#2E5698"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgArrow"
+            android:layout_marginRight="@dimen/height_4dp"
+            android:layout_marginLeft="@dimen/height_4dp"/>
+
+        <ImageView
+            android:id="@+id/imgSelect"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_add_circle_outline_24"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/height_4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvSubCategory"
+        android:layout_below="@+id/containerViewCategory"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginRight="@dimen/height_4dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/height_4dp"
+            android:paddingRight="@dimen/height_4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgCross"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="@dimen/height_4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_twotone_close_24"/>
+
+
+            <TextView
+                android:id="@+id/tvCategoryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Advice"
+                android:textSize="16sp"
+                android:textColor="#2E5698"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgArrow"
+                android:layout_marginRight="@dimen/height_4dp"
+                android:layout_marginLeft="@dimen/height_4dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
